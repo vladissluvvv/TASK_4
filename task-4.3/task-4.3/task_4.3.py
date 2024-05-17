@@ -1,10 +1,10 @@
 def is_anagram(a1, b2):
-    alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+    alphabet = 'Г ГЎГўГЈГ¤ГҐВёГ¦Г§ГЁГ©ГЄГ«Г¬Г­Г®ГЇГ°Г±ГІГіГґГµГ¶Г·ГёГ№ГєГ»ГјГЅГѕГї'
     s1 = ''.join(c for c in a1.lower() if c in alphabet)
     s2 = ''.join(c for c in b2.lower() if c in alphabet)
     return sorted(s1) == sorted(s2)
-sentence1 = input("Введите первое предложение: ")
-sentence2 = input("Введите второе предложение: ")
+a1 = input("Г‚ГўГҐГ¤ГЁГІГҐ ГЇГҐГ°ГўГ®ГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ: ")
+b2 = input("Г‚ГўГҐГ¤ГЁГІГҐ ГўГІГ®Г°Г®ГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ: ")
 result = is_anagram(a1, b2)
 print(f" {result}")
 
